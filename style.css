@@ -1,5 +1,42 @@
-/* body {
-    background-color: #1F2937;
-    flex-direction: column;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
 
-} */
+}
+
+body{
+    background-color: lightblue;
+}
+
+#header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color: #1F2937;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    width: 25%;
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+.header-link{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    font-size: 18px;
+    color: #E5E7EB;
+    justify-content: flex-end;
+}
+.hlink{
+    margin-left: 16px;
+}
+

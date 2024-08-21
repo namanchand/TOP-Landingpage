@@ -2,12 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}
-
-body{
-    background-color: lightblue;
 }
 
 #header{
@@ -16,6 +12,7 @@ body{
     flex-direction: row;
     background-color: #1F2937;
     padding: 20px;
+    justify-content: center;
     align-items: center;
     width: 100%;
     
@@ -27,6 +24,7 @@ body{
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bold;
+    margin-left: 100px;
 }
 .header-link{
     display: flex;
@@ -35,6 +33,7 @@ body{
     font-size: 18px;
     color: #E5E7EB;
     justify-content: flex-end;
+    margin-right: 100px;
 }
 .hlink{
     margin-left: 16px;
@@ -43,35 +42,50 @@ body{
 #hero{
     display: flex;
     background-color: #1F2937;
+    min-height: 480px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
         
 }
 
-.main-a,.main-b{
-    height: 480px;
-    border: 1px;
-    flex-basis: 49%;
-    align-content: center;
-
-}
-
-.hero-text{
-    font-size: 48px;
-    font-weight:bolder;
-    color: #F9FAF8;
-
-}
-.hero-subtext{
-    font-size: 18px;
-    color: #E5E7EB;
+.main-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    width: 45%;
+    min-height: 280px;
 }
 
 .main-b{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #727b86;
+    margin-right: 100px;
+    width: 45%;
+    min-height: 280px;
+    
+
 }
+
+.hero-text{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin-bottom: 8px;
+
+}
+
+.hero-subtext{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 8px;
+}
+
 button{
     background-color: #3882F6;
     padding: 6px 20px;
@@ -86,6 +100,7 @@ button{
     display: flex;
     flex-direction: column;
     background-color: white;
+    max-height: 400px;
 }
 
 .info-title{
@@ -125,4 +140,73 @@ button{
     justify-content: center;
     text-align: center;
     color: #1F2937;
+}
+
+#quote{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    min-height: 360px;
+    width: 100%;
+}
+
+.quote-text{
+    width: 60%;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+.quote-auther{
+    display: flex;
+    justify-content: flex-end;
+    font-weight:bolder;
+    color: #1F2937;
+    font-size: 24px;
+    width: 60%;
+}
+
+#cta{
+    display: flex;
+    min-height: 300px;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.cta.content{
+    display: flex;
+    width: 70%;
+    background-color: #3882F6;
+    padding: 40px 80px 40px;
+    border-radius: 8px;
+}
+
+
+button.cta{
+    background-color: #3882F6;
+    padding: 6px 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: white;
+    color:#F9FAF8;
+    font-weight: bold;
+    font-size: medium;
+    margin-left: auto;
+
+}
+
+#footer{
+    display: flex;
+    min-height: 80px;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
 }

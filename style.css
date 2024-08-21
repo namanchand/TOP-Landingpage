@@ -84,38 +84,45 @@ button{
 
 #info{
     display: flex;
-    background-color: red;
     flex-direction: column;
-    align-items: center;
+    background-color: white;
 }
 
 .info-title{
-    background-color: aqua;
+    display: flex;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
     margin-top: 28px;
     margin-bottom: 28px;
+    justify-content: center;
 }
 
 .info-content{
     display: flex;
-    
-    background-color: brown;
+    justify-content: center;
+    gap: 56px;
+    margin-bottom: 120px;
 
-}
-
-.info-img,.info-subtext{
-    display: flex;
-    padding: 60px;
-    text-wrap: wrap;
-    
 }
 
 .info-img{
-    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #3882F6;
+    border-radius: 16px;
+    width: 160px;
+    height: 160px;
+
 }
 
 .info-subtext{
-    padding: 20px;
+    width: 160px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: #1F2937;
 }
